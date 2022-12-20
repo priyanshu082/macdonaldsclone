@@ -14,14 +14,15 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 27px;
-    padding-left: 430px;
+    padding-left: 500px;
+    font-size: 1.2rem;
 }
 #navbar ul li{
     text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: black;
 }
 #navbar ul li a{
@@ -29,11 +30,12 @@
     color: black;
 }
 #navbar ul li a:hover{
+       
         /* Increase this as per requirement */
         padding-bottom: 8px;
         border-bottom-style: solid;
         border-bottom-width: 2.5px;
-        border-color: rgb(255, 219, 88);
+        border-color: rgb(289 185 44);
         width: fit-content;
 
         transform: scale(0,1);
@@ -45,7 +47,7 @@
  .navbar-brand img{
       height: 45px;
       width: 45px;
-      padding-left: 70px;
+      padding-left: 100px;
       padding-top: 17px;
       padding-bottom:10px
  }
@@ -66,16 +68,104 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: auto;
  }
  .container .bg-1::before{
     content: "";
     position: absolute;
     background: url(../image/bg1.webp) no-repeat;
     top: 0px;
-    left: 0px;
-    height:100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.7;
+    left: 480px;
+    height:109%;
+    width: 67%;
+    z-index: -3;
+    opacity: 1;
  }
-  
+ .container .first-background::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(369 185 14);
+    top: 0px;
+    left: 0px;
+    height:109%;
+    width: 40%;
+    z-index: -2;
+    opacity: 1;
+ }
+ .container .sticks1::before{
+    content: "";
+    position: absolute;
+    background:url(../image/slider.svg) no-repeat;
+    top: 0px;
+    left: 550px;
+    height:109%;
+    width: 4%;
+    z-index: 5;
+    opacity: 1;
+    
+ }
+ .container .sticks2::before{
+    content: "";
+    position: absolute;
+    background:url(../image/slider.svg) no-repeat ;
+    top: 0px;
+    left: 580px;
+    height:109%;
+    width: 6%;
+    z-index: 5;
+    opacity: 1;
+    transform: rotate(180deg);
+    
+ }
+
+ .first-background-text{
+    padding-top: 140px;
+    font-size: 2.5rem;
+    padding-left: 110px;
+    color: rgb(224, 35, 35);
+    padding-bottom: 100px;
+ }
+#button{
+    padding-left: 120px;
+}
+ .btn-left{
+    background-color: rgb(369 185 14);
+    border:2px solid red;
+    border-radius: 100%;
+    min-height: 50px;
+    min-width: 50px;
+    font-size: 1.8rem;
+    color: red;
+    /* box-shadow: 0px 0px 1px 1px rgb(235, 12, 12); */
+   
+ }
+
+
+ #button .btn-right{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    min-height: 65px;
+    min-width: 65px;
+    font-size: 1.8rem;
+    color: red;
+    /* box-shadow: 0px 0px 1px 1px rgb(235, 12, 12); */
+    margin-left: 16px;
+ }
+ #button .btn-right:hover{
+    cursor: pointer;
+    border: red;
+    color: white;
+    background-color: red ;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transition: 0.5s;
+ }
+ #button .btn-left:hover{
+    cursor: pointer;
+    border: red;
+    color: white;
+    background-color: red ;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    transition: 0.5s;
+ }
+
